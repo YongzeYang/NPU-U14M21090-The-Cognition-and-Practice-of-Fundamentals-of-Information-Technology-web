@@ -1,0 +1,1002 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/***目录**************************************************/
+
+
+/*1.导航栏：L17*******************************************/
+
+
+/*2.图片滑动部分：L166*************************************/
+
+
+/*3.正文[Part1]：L288[Part2]:L519[Part3]:L769[Part4]:L911*/
+
+
+/*4. AboutUs: L1116***************************************/
+
+
+/*5. Copyright:L1152**************************************/
+
+
+/********************|PART1: NAVIGATION|*******************/
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-back {
+    width: 100%;
+    height: 60px;
+    background: rgb(1, 8, 24);
+    z-index: 2;
+}
+
+.nav {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.nav a img {
+    float: left;
+    display: block;
+    height: 60px;
+    margin: 0 0;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    float: left;
+    width: 100px;
+    height: 60px;
+}
+
+.nav ul li:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(104, 104, 104)
+}
+
+.nav ul li a {
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+}
+
+.nav ul li ul li a {
+    width: 100px;
+    text-align: center;
+    z-index: 1;
+    line-height: 40px;
+    color: #fff;
+}
+
+.nav ul li ul {
+    display: none;
+}
+
+.nav ul li:hover ul {
+    display: block;
+}
+
+.nav ul li ul li {
+    background: rgba(0, 0, 0, 0.7);
+    height: 40px;
+}
+
+.nav ul li ul li:hover {
+    background: rgb(133, 173, 196);
+    z-index: 1;
+}
+
+.nav ul li ul li:hover a {
+    color: #fff;
+}
+
+.nav-search {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-search .search {
+    width: 260px;
+    height: 40px;
+    background: rgb(58, 71, 95);
+    border: none;
+    border-radius: 99px;
+    line-height: 40px;
+    padding: 0 0 0 20px;
+}
+
+.nav-search:hover .search {
+    background: 69F;
+    width: 300px;
+    background: rgb(228, 220, 220)
+}
+
+.nav-search .icon {
+    width: 32px;
+    height: 32px;
+    background: url(../images/icon-search.png) no-repeat center;
+    border: none;
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    z-index: 99;
+}
+
+.nav-client {
+    float: right;
+    padding: 10px;
+}
+
+.nav-client a img {
+    width: 32px;
+    height: 32px;
+}
+
+.nav-client p {
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+    padding: 0 0 0 -2px;
+}
+
+
+/*******************************|PART2 : SLIDE|*******************************/
+
+.slide {
+    position: relative;
+    margin: 40px auto 0 auto;
+    width: 1380px;
+    height: 460px;
+    text-align: center;
+    font-family: Arial;
+    color: #FFF;
+    overflow: hidden;
+    z-index: -1;
+    display: block;
+}
+
+.slide ul {
+    margin: 10px 0;
+    padding: 0;
+    width: 9999px;
+    transition: all 0.5s;
+}
+
+
+/*自动播放*/
+
+.slide .slide-auto {
+    animation: marginLeft 10.5s infinite;
+}
+
+.slide li {
+    float: left;
+    width: 1380px;
+    height: 460px;
+    list-style: none;
+    line-height: 460px;
+    font-size: 36px;
+}
+
+.slide li:nth-child(1) {
+    background: url(../images/slide1.png) no-repeat;
+}
+
+.slide li:nth-child(2) {
+    background: url(../images/slide2.png) no-repeat;
+}
+
+.slide li:nth-child(3) {
+    background: url(../images/slide3.png) no-repeat;
+}
+
+@keyframes marginLeft {
+    0% {
+        margin-left: 0;
+    }
+    28.5% {
+        margin-left: 0;
+    }
+    33.3% {
+        margin-left: -1380px;
+    }
+    62% {
+        margin-left: -1380px;
+    }
+    66.7% {
+        margin-left: -2760px;
+    }
+    95.2% {
+        margin-left: -2760px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+.choice {
+    background: rgba(49, 49, 49, 0.6);
+    width: 1380px;
+    height: 50px;
+    margin: -50px auto 20px auto;
+    text-align: center;
+}
+
+.choice ul {
+    list-style: none;
+    color: black;
+}
+
+.choice ul li {
+    float: left;
+    width: 197px;
+    height: 50px;
+}
+
+.choice ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+.choice ul li:hover {
+    background: rgba(190, 190, 190, 0.8);
+}
+
+
+/***********************************TEXT-PART1**************************************************/
+
+.background1 {
+    width: 100%;
+    padding: 50px 0;
+    background: rgb(255, 255, 255)
+}
+
+.text1 {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.text1 .text1-left {
+    float: left;
+    width: 480px;
+    height: 470px;
+    background: rgb(255, 255, 255);
+    margin: 0 0 20px 0;
+}
+
+.text1 .text1-left p:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text1 .text1-left .Abstract {
+    font-size: 26px;
+    padding: 0 0 5px 0;
+}
+
+.text1 .text1-left .sub-title {
+    font-size: 26px;
+    padding: 10px 0 10px 0;
+}
+
+.text1 .text1-left img {
+    width: 32px;
+    height: 32px;
+}
+
+.text1 .text1-left .top-text {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.text1 .text1-left .below-text {
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+.text1 .text1-left .below-text a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+
+.text1 .text1-left .below-text a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text1 .text1-middle {
+    float: left;
+    width: 350px;
+    height: 470px;
+    background: rgb(255, 255, 255);
+    margin: 0 20px 20px 20px;
+}
+
+.text1 .text1-middle .Abstract {
+    font-size: 26px;
+    padding: 0 0 5px 0;
+}
+
+.text1 .text1-middle .sub-title {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.text1 .text1-middle .sub-title a {
+    text-decoration: none;
+    color: rgb(107, 47, 47);
+}
+
+.text1 .text1-middle .sub-title a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text1 .text1-middle .sub-text a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text1 .text1-middle .sub-text {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.text1 .text1-middle .sub-text a {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+.text1 .text1-right {
+    float: left;
+    width: 470px;
+    height: 470px;
+    background: rgb(255, 255, 255);
+    margin: 0 0 20px 20px;
+}
+
+.text1 .text1-right .Abstract {
+    font-size: 26px;
+    padding: 0 0 5px 0;
+}
+
+.text1 .text1-right .text2-middle-part1 {
+    height: 130px;
+}
+
+.text1 .text1-right .text1-middle-part1 img {
+    width: 236px;
+    height: 130px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.text1 .text1-right .text1-middle-part1 a {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.text1 .text1-right .text1-middle-part1 a img:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+    /*鼠标移上去交互后，亮度增加*/
+}
+
+.text1 .text1-right .text1-middle-part1 a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text1 .text1-right .text1-middle-part1 p {
+    font-size: 12px;
+    line-height: 24px;
+    color: rgb(104, 104, 104);
+    margin: 10px;
+}
+
+.text1 .text1-right .text1-middle-part1 span {
+    font-size: 14px;
+    color: rgb(138, 138, 138);
+}
+
+.text1 .text1-right .text1-middle-part2 a img {
+    height: 130px;
+    width: 470px;
+}
+
+.text1 .text1-right .text1-middle-part2 a img:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.text1-bottom {
+    width: 1380px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.text1-bottom .text1-linkBottom {
+    width: 200px;
+    height: 48px;
+    border: 1px solid rgb(32, 32, 32);
+    color: rgb(148, 148, 148);
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    border-radius: 99px;
+}
+
+.text1-bottom .text1-linkBottom:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(29, 69, 114);
+}
+
+
+/***********************************TEXT-PART2**************************************************/
+
+.background2 {
+    width: 100%;
+    padding: 50px 0;
+    background: rgb(236, 236, 236)
+}
+
+.text2 {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.text2 h1 {
+    font-size: 30px;
+    color: rgb(39, 39, 39);
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: normal;
+}
+
+.text2 .text2-left {
+    float: left;
+    width: 510px;
+    height: 470px;
+    background: rgb(255, 255, 255);
+}
+
+.clear {
+    clear: both;
+}
+
+.text2 .text2-left a img {
+    height: 266px;
+    width: 510px;
+}
+
+.text2 .text2-left a img:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.text2 .text2-left span img {
+    width: 32px;
+    height: 32px;
+}
+
+.text2 .text2-left span {
+    padding: 10px 20px;
+    display: block;
+}
+
+.text2 .text2-left span .link {
+    width: 66px;
+    height: 24px;
+    border: 1px solid rgb(255, 85, 85);
+    color: rgb(255, 75, 75);
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    border-radius: 99px;
+    float: left;
+}
+
+.text2 .text2-left span .link:hover {
+    color: rgb(223, 223, 223);
+    background: rgb(255, 86, 86);
+}
+
+.text2 .text2-left span p {
+    float: left;
+    color: rgb(95, 95, 95);
+    font-size: 12px;
+    line-height: 26px;
+    margin: 0 0 0 20px;
+}
+
+.text2 .text2-left span .text2-left-title {
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    margin: 16px 0;
+    display: block;
+}
+
+.text2 .text2-left span .text2-left-title:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text2 .text2-left span temp {
+    font-weight: normal;
+    font-size: 18px;
+    color: rgb(56, 56, 56);
+    line-height: 30px;
+}
+
+.text2 .text2-middle {
+    float: left;
+    width: 498px;
+    height: 430px;
+    background: rgb(255, 255, 255);
+    margin: 0 30px;
+    padding: 20px;
+}
+
+.text2 .text2-middle .text2-middle-part1 {
+    height: 130px;
+}
+
+.text2 .text2-middle .text2-middle-part1 img {
+    width: 236px;
+    height: 130px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.text2 .text2-middle .text2-middle-part1 a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.text2 .text2-middle .text2-middle-part1 a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text2 .text2-middle .text2-middle-part1 a img:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.text2 .text2-middle .text2-middle-part1 p {
+    font-size: 14px;
+    color: rgb(104, 104, 104);
+    margin: 10px;
+}
+
+.text2 .text2-middle .text2-middle-part1 span {
+    font-size: 14px;
+    color: rgb(138, 138, 138);
+}
+
+.text2 .text2-right {
+    float: left;
+    width: 272px;
+    height: 470px;
+    background: rgb(255, 255, 255);
+}
+
+.text2 .text2-right a img {
+    height: 200px;
+    width: 272px;
+}
+
+.text2 .text2-right a img:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.text2 .text2-right span {
+    padding: 10px 20px;
+    display: block;
+}
+
+.text2 .text2-right span .text2-right-title {
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    margin: 28px 0;
+    display: block;
+}
+
+.text2 .text2-right span .text2-right-title:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text2 .text2-right span h2 {
+    font-weight: normal;
+    font-size: 14px;
+    color: rgb(94, 94, 94);
+    text-indent: 2em;
+}
+
+.Bottom {
+    width: 1380px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.Bottom .linkBottom {
+    width: 200px;
+    height: 48px;
+    border: 1px solid rgb(32, 32, 32);
+    color: rgb(148, 148, 148);
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    border-radius: 99px;
+}
+
+.Bottom .linkBottom:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(29, 69, 114);
+}
+
+
+/***********************************TEXT-PART3**************************************************/
+
+.background3 {
+    width: 100%;
+    padding: 50px 0;
+    background: rgb(255, 255, 255)
+}
+
+.text3 {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.text3 h1 {
+    font-size: 30px;
+    color: rgb(56, 7, 7);
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: normal;
+}
+
+.text3 .text3-left {
+    float: left;
+    width: 330px;
+    height: 380px;
+    background: rgb(255, 255, 255);
+    margin: 0 20px 20px 0;
+}
+
+.text3 .text3-left .text3-left-part1 a img {
+    width: 330px;
+    height: 160px;
+}
+
+.text3 .text3-left .text3-left-part1 a img:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.text3 .text3-left .text3-left-part1 a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.text3 .text3-left .text3-left-part1 a p {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.text3 .text3-left .text3-left-part1 a p:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text3 .text3-right {
+    float: left;
+    width: 330px;
+    height: 380px;
+    background: rgb(255, 255, 255);
+    margin: 0 0 20px 0;
+}
+
+.text3 .text3-right .sub-title {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.text3 .text3-right .sub-title a {
+    text-decoration: none;
+    color: rgb(107, 47, 47);
+}
+
+.text3 .text3-right .sub-title a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text3 .text3-right .sub-text {
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.text3 .text3-right .sub-text a {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+.text3 .text3-right .sub-text a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text3-bottom {
+    width: 1380px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.text3-bottom .text3-linkBottom {
+    width: 200px;
+    height: 48px;
+    border: 1px solid rgb(32, 32, 32);
+    color: rgb(148, 148, 148);
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    border-radius: 99px;
+}
+
+.text3-bottom .text3-linkBottom:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(29, 69, 114);
+}
+
+
+/***********************************TEXT-PART4**************************************************/
+
+.background4 {
+    width: 100%;
+    padding: 50px 0;
+    background: rgb(236, 236, 236)
+}
+
+.text4 {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.text4 h1 {
+    font-size: 30px;
+    color: rgb(56, 7, 7);
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-weight: normal;
+}
+
+.text4 .text4-left {
+    float: left;
+    width: 180px;
+    height: 320px;
+    background: rgb(255, 255, 255);
+    margin: 0 20px 20px 0;
+}
+
+.text4 .text4-left a img {
+    width: 180px;
+    height: 280px;
+}
+
+.text4 .text4-left a img:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.text4 .text4-left .title4 {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.text4 .text4-left .title4 a {
+    text-decoration: none;
+    color: rgb(92, 58, 58);
+}
+
+text4 .text4-left .title4 a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text4 .text4-left .t-text4 {
+    font-size: 8px;
+    line-height: 12px;
+    text-align: center;
+}
+
+.text4 .text4-left .t-text4 a {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+
+.text4 .text4-left .t-text4 a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text4 .text4-last {
+    float: left;
+    width: 180px;
+    height: 320px;
+    background: rgb(255, 255, 255);
+    margin: 0 0 20px 0;
+}
+
+.text4 .text4-last a img {
+    width: 180px;
+    height: 280px;
+}
+
+.text4 .text4-last a img:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.text4 .text4-last .title4 {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.text4 .text4-last .title4 a {
+    text-decoration: none;
+    color: rgb(92, 58, 58);
+}
+
+.text4 .text4-last .title4 a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text4 .text4-last .text4 a:hover {
+    color: rgb(29, 69, 114);
+}
+
+.text4 .text4-last .t-text4 {
+    font-size: 8px;
+    line-height: 12px;
+    text-align: center;
+}
+
+.text4 .text4-last .t-text4 a {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+
+.text4-bottom {
+    width: 1380px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.text4-bottom .text4-linkBottom {
+    width: 200px;
+    height: 48px;
+    border: 1px solid rgb(66, 66, 66);
+    color: rgb(65, 65, 65);
+    line-height: 48px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 99px;
+}
+
+.text4-bottom .text4-linkBottom:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(46, 98, 156);
+}
+
+.friendly-links {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.friendly-links .fl-head {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(138, 138, 138);
+}
+
+.friendly-links .fl-list {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(100, 100, 100);
+}
+
+.friendly-links .fl-list:hover {
+    color: rgb(46, 98, 156);
+}
+
+
+/***********************************ABOUT-US**************************************************/
+
+.background5 {
+    width: 100%;
+    padding: 50px 0;
+    background: rgb(8, 6, 26)
+}
+
+.about-us {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.about-us .au-list {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(185, 185, 185);
+}
+
+.about-us span {
+    color: rgba(148, 147, 147, 0.651);
+}
+
+.about-us .allowance {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    line-height: 20px;
+}
+
+
+/***********************************COPYRIGHT**************************************************/
+
+.background6 {
+    width: 100%;
+    padding: 50px 0;
+    background: rgb(41, 40, 48)
+}
+
+.copyright {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.copyright .cp {
+    color: rgb(117, 187, 245);
+}
+
+.copyright .cp2 {
+    color: rgb(128, 128, 128);
+}
+
+.copyright a {
+    text-decoration: none;
+    color: grey;
+}
+
+.copyright a:hover {
+    text-decoration: none;
+    color: rgb(117, 187, 245);
+}
